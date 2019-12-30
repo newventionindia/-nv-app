@@ -18,6 +18,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "nv-header": [
+        "dist/nv-header"
+      ],
+      "nv-header/*": [
+        "dist/nv-header/*"
+      ]
+    }
   }
 }
