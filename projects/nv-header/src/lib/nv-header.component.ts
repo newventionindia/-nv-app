@@ -1,15 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-nv-header',
-  template: `
-    <p>
-      nv-header works!
-    </p>
-  `,
-  styles: []
+  templateUrl: './nv-header.component.html',
+  styleUrls: ['./nv-header.component.scss']
 })
 export class NvHeaderComponent implements OnInit {
+
+  title = 'New Vention India';
 
   constructor() { }
 

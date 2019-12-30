@@ -7,8 +7,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'New Vention India';
-
   constructor(private router: Router) { }
   ngOnInit(): void {
     this.router.navigate(['', { outlets: {header: 'header'} }], { skipLocationChange: true });
