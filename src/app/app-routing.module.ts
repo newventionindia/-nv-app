@@ -1,13 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { ProxyLoadChildrenComponent } from './components/proxy-load-children/proxy-load-children.component';
-
 const routes: Routes = [
-  { path: '',
-    // component: ProxyLoadChildrenComponent,
+  { path: 'header',
     loadChildren: () => import('nv-header').then(m => m.NvHeaderModule),
-    // outlet: 'header'
+    outlet: 'header'
   }
 ];
 
