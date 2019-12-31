@@ -1,18 +1,19 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { NvHeaderComponent } from './nv-header.component';
+import { BaseComponent } from './components/base/base.component';
+import { LinksComponent } from './components/links/links.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: NvHeaderComponent
+    component: BaseComponent
   }
 ];
 
 @NgModule({
-  declarations: [NvHeaderComponent],
+  declarations: [BaseComponent, LinksComponent],
   imports: [RouterModule.forChild(routes)],
-  exports: [NvHeaderComponent]
+  exports: [BaseComponent]
 })
 export class NvHeaderModule { }
