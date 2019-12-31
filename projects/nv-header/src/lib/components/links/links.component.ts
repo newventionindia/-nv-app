@@ -15,5 +15,9 @@ export class LinksComponent implements OnInit {
   expenseClicked() {
     this.router.navigate(['', { outlets: {dynamicModules: 'expense'} }], { skipLocationChange: true });
   }
+  
+  invoiceClicked() {
+    this.router.navigate(['', { outlets: {dynamicModules: 'invoice'} }], { skipLocationChange: true });
+  }
 
 }

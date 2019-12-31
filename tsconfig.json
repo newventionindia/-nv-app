@@ -31,6 +31,12 @@
       ],
       "nv-expense/*": [
         "dist/nv-expense/*"
+      ],
+      "nv-invoice": [
+        "dist/nv-invoice"
+      ],
+      "nv-invoice/*": [
+        "dist/nv-invoice/*"
       ]
     }
   }
