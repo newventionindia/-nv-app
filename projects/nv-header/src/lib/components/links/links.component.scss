@@ -1,4 +1,4 @@
-ul {
+.menu-items {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -7,7 +7,7 @@ ul {
 }
 
 
-li {
+.menu-item {
   float: left;
   display: block;
   color: white;
@@ -16,7 +16,7 @@ li {
   text-decoration: none;
 }
 
-li:hover {
+.menu-item:hover {
   background-color: #111111;
   cursor: pointer;
 }
