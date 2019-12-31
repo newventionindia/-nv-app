@@ -25,6 +25,12 @@
       ],
       "nv-header/*": [
         "dist/nv-header/*"
+      ],
+      "nv-expense": [
+        "dist/nv-expense"
+      ],
+      "nv-expense/*": [
+        "dist/nv-expense/*"
       ]
     }
   }

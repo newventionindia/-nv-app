@@ -5,6 +5,10 @@ const routes: Routes = [
   { path: 'header',
     loadChildren: () => import('nv-header').then(m => m.NvHeaderModule),
     outlet: 'header'
+  },
+  { path: 'expense',
+    loadChildren: () => import('nv-expense').then(m => m.NvExpenseModule),
+    outlet: 'dynamicModules'
   }
 ];
 

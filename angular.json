@@ -169,6 +169,41 @@
           }
         }
       }
+    },
+    "nv-expense": {
+      "projectType": "library",
+      "root": "projects/nv-expense",
+      "sourceRoot": "projects/nv-expense/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/nv-expense/tsconfig.lib.json",
+            "project": "projects/nv-expense/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/nv-expense/src/test.ts",
+            "tsConfig": "projects/nv-expense/tsconfig.spec.json",
+            "karmaConfig": "projects/nv-expense/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/nv-expense/tsconfig.lib.json",
+              "projects/nv-expense/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "nv-app"

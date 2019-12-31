@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'nv-header-links',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LinksComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
-  ngOnInit() {
+  ngOnInit() {}
+  
+  expenseClicked() {
+    this.router.navigate(['', { outlets: {dynamicModules: 'expense'} }], { skipLocationChange: true });
   }
 
 }
