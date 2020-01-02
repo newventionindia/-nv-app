@@ -37,6 +37,24 @@
       ],
       "nv-invoice/*": [
         "dist/nv-invoice/*"
+      ],
+      "nv-shared-services": [
+        "dist/nv-shared-services"
+      ],
+      "nv-shared-services/*": [
+        "dist/nv-shared-services/*"
+      ],
+      "nv-shared-module": [
+        "dist/nv-shared-module"
+      ],
+      "nv-shared-module/*": [
+        "dist/nv-shared-module/*"
+      ],
+      "nv-core": [
+        "dist/nv-core"
+      ],
+      "nv-core/*": [
+        "dist/nv-core/*"
       ]
     }
   }

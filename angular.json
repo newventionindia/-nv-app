@@ -239,6 +239,111 @@
           }
         }
       }
+    },
+    "nv-shared-services": {
+      "projectType": "library",
+      "root": "projects/nv-shared-services",
+      "sourceRoot": "projects/nv-shared-services/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/nv-shared-services/tsconfig.lib.json",
+            "project": "projects/nv-shared-services/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/nv-shared-services/src/test.ts",
+            "tsConfig": "projects/nv-shared-services/tsconfig.spec.json",
+            "karmaConfig": "projects/nv-shared-services/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/nv-shared-services/tsconfig.lib.json",
+              "projects/nv-shared-services/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "nv-shared-module": {
+      "projectType": "library",
+      "root": "projects/nv-shared-module",
+      "sourceRoot": "projects/nv-shared-module/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/nv-shared-module/tsconfig.lib.json",
+            "project": "projects/nv-shared-module/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/nv-shared-module/src/test.ts",
+            "tsConfig": "projects/nv-shared-module/tsconfig.spec.json",
+            "karmaConfig": "projects/nv-shared-module/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/nv-shared-module/tsconfig.lib.json",
+              "projects/nv-shared-module/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "nv-core": {
+      "projectType": "library",
+      "root": "projects/nv-core",
+      "sourceRoot": "projects/nv-core/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/nv-core/tsconfig.lib.json",
+            "project": "projects/nv-core/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/nv-core/src/test.ts",
+            "tsConfig": "projects/nv-core/tsconfig.spec.json",
+            "karmaConfig": "projects/nv-core/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/nv-core/tsconfig.lib.json",
+              "projects/nv-core/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "nv-app"
